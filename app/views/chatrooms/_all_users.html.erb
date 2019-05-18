@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to "#{user.username}", get_users_chatroom_chatrooms_path(user_id: user.id), method: :post %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
