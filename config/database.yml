@@ -48,7 +48,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: chatbox_production
-  username: chatbox
-  password: <%= ENV['CHATBOX_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: b15b7886a71a2c
+  password: 60efb299
+  database: heroku_dd53dbec6a25f8b
+  host: eu-cdbr-west-02.cleardb.net
