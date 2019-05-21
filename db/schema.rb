@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_12_153616) do
+ActiveRecord::Schema.define(version: 2019_05_21_034822) do
 
   create_table "chatroom_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "chatroom_id"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_05_12_153616) do
     t.datetime "updated_at", null: false
     t.integer "chatroom_type"
     t.boolean "is_private"
+    t.integer "created_by"
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
