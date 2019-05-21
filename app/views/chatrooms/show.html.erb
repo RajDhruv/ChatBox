@@ -50,7 +50,7 @@
 					<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
 				</div>
 					<%= f.text_area :body, rows:1, class: "form-control type_msg",placeholder: "Type your message...", autofocus: true%>
-				<div class="input-group-append">
+				<div class="input-group-append" onclick='$(this).submit();'>
 					<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
 				</div>
 			</div>
@@ -62,4 +62,9 @@
 		setTimeout(function() {
 			$('#chatroom_panel_<%=@chatroom.id%>').animate({ scrollTop: $('#chatroom_panel_<%=@chatroom.id%>').prop("scrollHeight")}, 1000);
 		}, 500);
+		$(document).ready(function(){
+			$('#action_menu_btn').click(function(){
+				$('.action_menu').toggle();
+			});
+		});
 	</script>

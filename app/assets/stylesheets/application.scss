@@ -163,6 +163,29 @@
 		cursor: pointer;
 		margin-right: 20px;
 	}
+	.chatrooms_link{
+		color: wheat;
+		font-weight: 700;
+		font-size: xx-large;
+		padding-left: 15px;
+	}
+	.chatrooms_list_links{
+		color: goldenrod;
+		font-size: x-large;
+		font-weight: 500;
+	}
+	.chatrooms_list_links_leftpanel {
+		color: yellowgreen;
+		font-size: x-large;
+		font-weight: 500;
+		font-family: cursive;
+	}
+	.header_active{
+		background-color: azure;
+		border-radius: 8px;
+		border: solid;
+		border-color: deepskyblue;
+	}
 	.msg_cotainer{
 		margin-top: auto;
 		margin-bottom: auto;
