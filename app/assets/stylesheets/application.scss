@@ -167,7 +167,15 @@
 		color: wheat;
 		font-weight: 700;
 		font-size: xx-large;
-		padding-left: 15px;
+		padding-left: 7px;
+		float:left;
+	}
+	.new_chatroom_link{
+		float:right;
+		width: min-content;
+		margin-top: 5px;
+		margin-right: 5px;
+		padding: 6px 5px 6px 5px;
 	}
 	.chatrooms_list_links{
 		color: goldenrod;
